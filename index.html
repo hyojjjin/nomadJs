@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="img">
+        <div id="login-form">
+            <input type="text" placeholder="이름을 입력하세요."/> 
+            <button>로그인</button>
+        </div>
+        <div id="logout" hidden>
+            <span id="userName"></span>
+            <button>로그아웃</button>
+        </div>
+        <h2>현재 시간</h2>
+        <div id="clock"> 00:00:00 </div>
+        <div id="weather" hidden>
+            <h2>위치와 날씨</h2>
+        </div>
+        <div id="todo-form" hidden>
+            <h2>todo-list!</h2>
+                <input type="text" placeholder="todo list를 추가하세요!">
+                <button>등록</button>
+                <ul id="todo-list"></ul>
+            </div>
+        </div>
+
+    </div>
+    <script src="src/js/clock.js"></script>
+    <script src="src/js/login.js"></script>
+    <script src="src/js/todo.js"></script>
+    <script src="src/js/backImg.js"></script>
+    <script src="src/js/weather.js"></script>
+</body>
+</html>
