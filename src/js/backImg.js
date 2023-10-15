@@ -1,29 +1,21 @@
 const backImg = [
     {
-        url:"src/img/seoul1.png",
-        name:"seoul1"
+        url:"src/img/sky1.jpg",
+        name:"sky1"
     },
     {
-        url:"src/img/seoul2.png",
-        name:"seoul2"
+        url:"src/img/sky2.jpg",
+        name:"sky2"
     },
     {
-        url:"src/img/seoul3.png",
-        name:"seoul3"
-    },
-    {
-        url:"src/img/seoul4.png",
-        name:"seoul4"
-    },
-    {
-        url:"src/img/seoul5.png",
-        name:"seoul5"
+        url:"src/img/sky3.jpg",
+        name:"sky3"
     }
 ]
 
 const img = document.querySelector("#img")
 const getRandomBackImg = () => {
-    const randomNum =  Math.ceil(Math.random()*4)
+    const randomNum =  Math.ceil(Math.random()*2)
     img.style.backgroundImage = `url(${backImg[randomNum].url})`;
 }
 
